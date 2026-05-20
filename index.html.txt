@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salt Translator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<div class="card">
+
+<h1>🧂 Salt Translator</h1>
+<p>음식의 예상 염분과 영어 번역을 확인해보세요!</p>
+
+<label>음식 이름</label>
+<input type="text" id="foodName" placeholder="예: 김치찌개">
+
+<label>재료 입력 (쉼표로 구분)</label>
+<textarea id="ingredients" placeholder="예: 김치, 간장, 두부"></textarea>
+
+<button onclick="analyzeFood()">
+염분 분석 시작
+</button>
+
+<div id="result" class="hidden">
+
+<h2>📊 분석 결과</h2>
+
+<p id="foodTranslation"></p>
+<p id="sodiumResult"></p>
+<p id="levelResult"></p>
+
+<h3>🍴 재료 영어 번역</h3>
+<ul id="translationList"></ul>
+
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
